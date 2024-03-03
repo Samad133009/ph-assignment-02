@@ -172,11 +172,6 @@ body{
     width: 560px;
     height: 550px;
     flex-shrink: 0;
-    /* border: 2px solid blue;
-    border-radius: 16px; */
-    /* width: 540px;
-    height: 550px; */
-    /* flex-shrink: 0; */
 }
 .special-button{
     padding: 13px 35px;
@@ -259,7 +254,8 @@ body{
 }
 .choose-us-section-03{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     /* flex-wrap: wrap;
     justify-content: space-between; */
 }
@@ -268,7 +264,9 @@ body{
     /* width: 50%; */
     width: 550px;
     height: 284px;
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 3;
     /* flex: 0 0 calc(50% - 5px); */
 }
 .handpicked-hotels h4{
@@ -293,7 +291,9 @@ body{
     background: rgba(41, 206, 246, 0.05);
     width: 550px;
     height: 284px;
-    flex-shrink: 0;
+    grid-column: 4 / span 3;
+    grid-row: 1 / span 3;
+    /* flex-shrink: 0; */
     /* flex: 0 0 calc(50% - 5px); */
     /* width: 50%; */
 } 
@@ -310,14 +310,13 @@ body{
 }
 .price{
     background: rgba(233, 68, 68, 0.05);
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
     text-align: center;
     margin-top: 10px;
     width: 550px;
     height: 284px;
-    
- 
-
+    grid-column: 3 / span 3;
+    grid-row: 4 / span 3;
 }
 .price h4{
     color: #131318;
@@ -376,9 +375,7 @@ body{
 }
 .newsletter-picture{
     width: 60%;
-}
-.newsletter-picture img{
-    position: absolute;
+    position: relative;
 }
 .discount{
     display: grid;
@@ -386,10 +383,10 @@ body{
     background: #FF5400;
     width: 324px;
     height: 80px;
-    position: relative;
+    position: absolute;
     transform: rotate(-19.628deg);
     margin-left: 284px;
-    top: 65%;
+    top: 300px;
 }
 .discount p{
     color: #FFF;
@@ -419,7 +416,6 @@ body{
     margin: 0 auto;
     margin-top: 50px;
     /* background: rgba(19, 19, 24, 0.05); */
-    
 }
 .footer-heading{
     padding: 110px;

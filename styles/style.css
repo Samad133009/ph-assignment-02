@@ -61,16 +61,17 @@ body{
     /* border: 2px solid blue; */
 }
 .banner-section img{
-    width: 1170px;
-    height: 500px;
-    position: absolute;
+    /* width: 1170px;
+    height: 500px; */
+    position: relative;
 }
 .banner-section h3{
     padding: 106px 314px 287px 287px;
-    position: relative;
+    position: absolute;
     color: #FFF;
     font-size: 64px;
     font-weight: 800;
+    top: 50px;
     /* margin-bottom: 24px; */
 }
 .banner-section p{
@@ -79,7 +80,29 @@ body{
     text-align: center;
     font-size: 16px;
     font-weight: 400;
-    position: relative;
+    position: absolute;
+    top: 250px;
+    margin-left: 300px;
+}
+.input-all{
+    position: absolute;
+    top: 300px;
+    margin-left: 250px;
+    padding: 20px;
+}
+.first-input{
+    padding: 20px;
+}
+.second-input{
+    padding: 20px;
+}
+#dropdown{
+    padding: 20px;
+}
+.search-button{
+    padding: 20px;
+    border-radius: 8px;
+    background: #FF5400;
 }
 /* banner style ends here */
 
@@ -91,11 +114,12 @@ body{
     /* border: 2px solid blue; */
     display: flex;
     margin-top: 50px;
-    gap: 20px;
+    /* gap: 20px; */
 }
 .popular-tour-text{
     width: 50%;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
+    padding-left: 5px;
 }
 .popular-tour-text h3{
     color: #131318;
@@ -109,45 +133,50 @@ body{
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 24px;
-    width: 577px;
+    width: 100%;
 }
 
-.list-01{
+.list-popular-tour{
     color: rgba(19, 19, 24, 0.70);
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 24px;
-    width: 525px;
+    /* width: 525px; */
+    width: 100%;
 }
-.list-02{
+
+/* .list-02{
     color: rgba(19, 19, 24, 0.70);
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 24px;
-    width: 525px;
+    width: 100%;
 }
 .list-03{
     color: rgba(19, 19, 24, 0.70);
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 24px;
-    width: 525px;
-}
+    width: 100%;
+} */
+
 .summary-popular-tour{
     margin-bottom: 24px;
     color: #5A5A5D;
     font-size: 16px;
     font-weight: 400;
-    line-height: 26px;
-    width: 530px;
+    width: 100%;
 }
 .popular-tour-image{
     width: 50%;
-    /* border: 2px solid blue;
-    border-radius: 16px; */
-    width: 540px;
+    width: 560px;
     height: 550px;
     flex-shrink: 0;
+    /* border: 2px solid blue;
+    border-radius: 16px; */
+    /* width: 540px;
+    height: 550px; */
+    /* flex-shrink: 0; */
 }
 .special-button{
     padding: 13px 35px;
@@ -180,6 +209,17 @@ body{
     font-weight: 400;
     margin-bottom: 48px;
 }
+.maldives, .indonesia, .srilanka, .north-america, .kashmir, .bangladesh, .bandarban {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 .row-01-image{
     gap: 24px;
     display: flex;
@@ -203,76 +243,94 @@ body{
     margin: 0 auto;
     margin-top: 50px;
 }
-.choose-us-section-for-3{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
 .choose-us-section h3{
     color: #131318;
     text-align: center;
     font-size: 40px;
-    font-weight: 800;
+    font-weight: 400;
     margin-bottom: 24px;
 }
 .choose-us-section p{
     color: rgba(19, 19, 24, 0.70);
     text-align: center;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 200;
     margin-bottom: 48px;
+}
+.choose-us-section-03{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* flex-wrap: wrap;
+    justify-content: space-between; */
 }
 .handpicked-hotels{
     background: rgba(251, 181, 99, 0.05);
     /* width: 50%; */
+    width: 550px;
+    height: 284px;
+    flex-shrink: 0;
+    /* flex: 0 0 calc(50% - 5px); */
 }
 .handpicked-hotels h4{
     color: #131318;
-    font-family: Mulish;
     font-size: 24px;
-    font-weight: 800;
+    font-weight: 400;
     margin: 20px;
     align-items: center;
 }
 .handpicked-hotels p{
     color: #5A5A5D;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 200;
 }
 .fa-solid{
+    padding: 32px 477px 20px 32px;
     width: 64px;
     height: 64px;
     margin-bottom: 20px;
 }
 .map{
     background: rgba(41, 206, 246, 0.05);
-}
+    width: 550px;
+    height: 284px;
+    flex-shrink: 0;
+    /* flex: 0 0 calc(50% - 5px); */
+    /* width: 50%; */
+} 
 .map h4{
     color: #131318;
     font-size: 24px;
-    font-weight: 800;
+    font-weight: 400;
     margin-bottom: 24px;
 }
 .map p{
     color: #5A5A5D;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 200;
 }
 .price{
     background: rgba(233, 68, 68, 0.05);
-    justify-content: center;
-    align-items: center;
+    flex-shrink: 0;
+    text-align: center;
+    margin-top: 10px;
+    width: 550px;
+    height: 284px;
+    
+ 
+
 }
 .price h4{
     color: #131318;
     font-size: 24px;
-    font-weight: 800;
+    font-weight: 400;
     margin-bottom: 24px;
 }
 .price p{
     color: #5A5A5D;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 200;
 }
+
 /* why choose us section style ends here */
 
 /* newsletter section style ends here */
@@ -331,7 +389,7 @@ body{
     position: relative;
     transform: rotate(-19.628deg);
     margin-left: 284px;
-    top: 75%;
+    top: 65%;
 }
 .discount p{
     color: #FFF;

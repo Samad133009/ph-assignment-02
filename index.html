@@ -13,7 +13,7 @@
         <!-- nav bar section starts here -->
         <nav class="nav-container">
             <div class="nav-left">
-                <img src="Images/Group 40071 (2).png" alt="">
+                <img src="./Images/Group 40071 (2).png" alt="">
                 <p>Best <span class="special-color">Travel</span></p>
             </div>
             <div class="nav-right">
@@ -28,32 +28,44 @@
     </header>
     <main>
 <!-- banner section starts here -->
-    <section class="banner-section">
-        <img src="Images/Group 13 (1) (1).png" alt="">
+    <section>
+       <div class="banner-section">
+        <img src="./Images/Group 13 (1) (1).png" alt="">
         <h3>Explore Your Travel</h3>
         <p>Explore your travel suggests delving deeply into your experiences and adventures <br> while traveling.</p>
-        <div>
-            <input type="Where go" placeholder="Where go">
-            <input type="date" name="" id="" placeholder="When"> 
-            <input type="search" name="" id="" placeholder="Find now">
+        <div class="input-all">
+            <input type="Where go" placeholder="Where go" class="first-input">
+            <input type="date" id="dateInput" placeholder="Select Date" class="second-input"> 
+            <select id="dropdown">
+                <option value="option1">Select Type</option>
+                <option value="option2">Select Type</option>
+                <option value="option3">Select Type</option>
+              </select>
+            <input type="search" name="" id="" placeholder="Find now" class="search-button">
         </div>
+       </div>
     </section>
 <!-- banner section ends here -->
 <!-- Popular tour section starts here -->
-    <section class="popular-tour">
-        <div class="popular-tour-text">
-            <h3>Our Popular Tours</h3>
-            <p>"Popular tour" typically refers to a travel package or itinerary that is widely favored and frequently chosen by travelers.</p>
-            <ul>
-                <li class="list-01">Tours to destinations renowned for their natural beauty, such as national parks, scenic coastlines, or picturesque landscapes, attract travelers seeking awe-inspiring views and outdoor adventures.</li>
-                <li class="list-02">Tours to culturally rich destinations, including historical landmarks, UNESCO World Heritage sites, or cities with vibrant arts scenes, allow travelers to immerse themselves in the local traditions, architecture, and customs.</li>
-                <li class="list-03">Tours offering adventurous activities like hiking, white-water rafting, zip-lining, or safari expeditions appeal to adrenaline junkies and those seeking thrilling experiences in exotic locations.</li>
-            </ul>
-            <p class="summary-popular-tour">These tours immerse travelers in the rich history, architecture, and traditions of a destination, often visiting UNESCO World Heritage sites, historical landmarks, and museums.</p>
-            <button class="special-button">Read More</button>
-        </div>
-        <div class="popular-tour-image">
-            <img src="Images/Rectangle 9.png" alt="">
+    <section>
+        <div class="popular-tour">
+            <div class="popular-tour-text">
+                <h3>Our Popular Tours</h3>
+    
+                <p>"Popular tour" typically refers to a travel package or itinerary that is widely favored and frequently chosen by travelers.</p>
+                <!-- <ul> -->
+                <li class="list-popular-tour">Tours to destinations renowned for their natural beauty, such as national parks, scenic coastlines, or picturesque landscapes, attract travelers seeking awe-inspiring views and outdoor adventures.</li>
+                <li class="list-popular-tour">Tours to culturally rich destinations, including historical landmarks, UNESCO World Heritage sites, or cities with vibrant arts scenes, allow travelers to immerse themselves in the local traditions, architecture, and customs.</li>
+                <li class="list-popular-tour">Tours offering adventurous activities like hiking, white-water rafting, zip-lining, or safari expeditions appeal to adrenaline junkies and those seeking thrilling experiences in exotic locations.</li>
+                <!-- </ul> -->
+                <p class="summary-popular-tour">These tours immerse travelers in the rich history, architecture, and traditions of a destination, often visiting UNESCO World Heritage sites, historical landmarks, and museums.</p>
+                <button class="special-button">Read More</button>
+                
+            </div>
+    
+            <div class="popular-tour-image">
+                <img src="./Images/Rectangle 9.png" alt="" style="width: 100%;height: 100%;">
+            </div>
         </div>
     </section>
 <!-- Popular tour section ends here -->
@@ -63,39 +75,62 @@
         <h3>Choose Your Destination</h3>
         <p>"Choose Your Destination" refer to a customizable travel <br>experience where travelers have the flexibility to select <br> their desired destination.</p>
         <div class="row-01-image">
-            <img src="Images/Rectangle 5.png" alt="">
-            <img src="Images/Rectangle 8.png" alt="">
+            <div class="maldives">
+                <img src="./Images/Rectangle 5.png" alt="">
+                <div class="centered"><h1>Maldives</h1></div>
+            </div>
+            <div class="indonesia">
+                <img src="./Images/Rectangle 8.png" alt="">
+                <div class="centered"><h1>Indonesia</h1></div>
+            </div>
         </div>
         <div class="row-02-image">
-            <img src="Images/Rectangle 6.png" alt="">
-            <img src="Images/Rectangle 7.png" alt="">
-            <img src="Images/Rectangle 9.png" alt="">
+            <div class="srilanka">
+                <img src="./Images/Rectangle 6.png" alt="">
+                <div class="centered"><h1>Srilanka</h1></div>
+            </div>
+            <div class="north-america">
+                <img src="./Images/Rectangle 7.png" alt="">
+                <div class="centered"><h1>North-America</h1></div>
+            </div>
+            <div class="kashmir">
+                <img src="./Images/Rectangle 9.png" alt="">
+                <div class="centered"><h1>Kashmir</h1></div>
+            </div>
         </div>
         <div class="row-03-image">
-            <img src="Images/Rectangle 11.png" alt="">
-            <img src="Images/Rectangle 10.png" alt="">
+            <div class="bangladesh">
+                <img src="./Images/Rectangle 11.png" alt="">
+                <div class="centered"><h1>Bangladesh</h1></div>
+            </div>
+            <div class="bandarban">
+                <img src="./Images/Rectangle 10.png" alt="">
+                <div class="centered"><h1>Bandarban</h1></div>
+            </div>
         </div>
     </section>
 <!-- destination section ends here -->
 <!-- why choose us section starts here -->
-    <section class="choose-us-section">
-        <h3>Why Choose Us</h3>
-        <p>"Choose Us" could refer to a marketing slogan used by a travel <br> agency, tour operator, or service provider to persuade potential <br> customers to select their services</p>
-        <div class="choose-us-section-for-3">
-            <div class="handpicked-hotels">
-                <span><i class="fa-solid fa-hotel"></i></span>
-                <h4>Handpicked Hotels</h4>
-                <p>The term "handpicked" implies that each hotel has been personally selected or vetted by experts in the travel industry to ensure that it meets certain standards and provides a positive experience for guests. </p>
-            </div>
-            <div class="map">
-                <span><i class="fa-sharp fa-solid fa-map"></i></span>
-                <h4>World Class Service</h4>
-                <p>World-class service goes beyond meeting basic needs or expectations; it aims to create exceptional experiences that leave a lasting impression and inspire loyalty and advocacy from customers.</p>
-            </div>
-            <div class="price">
-                <span><i class="fa-solid fa-hand-holding-dollar"></i></span>
-                <h4>Best Price Guarantee</h4>
-                <p>The Best Price Guarantee is a way for companies to differentiate themselves from competitors and demonstrate their commitment to offering value and savings to customers. It's a powerful marketing tool that helps to attract.</p>
+    <section >
+        <div class="choose-us-section">
+            <h3>Why Choose Us</h3>
+            <p>"Choose Us" could refer to a marketing slogan used by a travel <br> agency, tour operator, or service provider to persuade potential <br> customers to select their services</p>
+            <div class="choose-us-section-03">
+                    <div class="handpicked-hotels">
+                        <span><i class="fa-solid fa-hotel"></i></span>
+                        <h4>Handpicked Hotels</h4>
+                        <p>The term "handpicked" implies that each hotel has been personally selected or vetted by experts in the travel industry to ensure that it meets certain standards and provides a positive experience for guests. </p>
+                    </div>
+                    <div class="map">
+                        <span><i class="fa-sharp fa-solid fa-map"></i></span>
+                        <h4>World Class Service</h4>
+                        <p>World-class service goes beyond meeting basic needs or expectations; it aims to create exceptional experiences that leave a lasting impression and inspire loyalty and advocacy from customers.</p>
+                    </div>
+                <div class="price">
+                    <span><i class="fa-solid fa-hand-holding-dollar"></i></span>
+                    <h4>Best Price Guarantee</h4>
+                    <p>The Best Price Guarantee is a way for companies to differentiate themselves from competitors and demonstrate their commitment to offering value and savings to customers. It's a powerful marketing tool that helps to attract.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -110,7 +145,7 @@
         <button class="subscribe-button">Subscribe</button>
        </div>
        <div class="newsletter-picture">
-        <img src="Images/Rectangle 8 (1).png" alt="">
+        <img src="./Images/Rectangle 8 (1).png" alt="">
         <div class="discount">
             <p>Travel.com</p>
             <h3>Save up to 70%</h3>
@@ -125,15 +160,15 @@
 <!-- Footer starts here -->
        <div class="footer-part">
         <div class="footer-heading">
-            <img src="Images/Group 40071 (2).png" alt="">
+            <img src="./Images/ 40071 (2).png" alt="">
             <p>Best <span class="special-color">Travel</span></p>
             </div> 
             <p class="best-travel-description">Determining the "best" travel destination depends on individual preferences, interests, and circumstances</p>
             <div class="social-link">
-                <a href=""><img src="images/Facebook.png" alt=""></a>
-                <a href=""><img src="images/Twitter.png" alt=""></a>
-                <a href=""><img src="images/Instagram.png" alt=""></a>
-                <a href=""><img src="images/Linkedin.png" alt=""></a>
+                <a href=""><img src="./Images/Facebook.png" alt=""></a>
+                <a href=""><img src="./Images/Linkedin.png" alt=""></a>
+                <a href=""><img src="./Images/Twitter.png" alt=""></a>
+                <a href=""><img src="./Images/Instagram.png" alt=""></a>
             </div>
             <hr>
        </div>
